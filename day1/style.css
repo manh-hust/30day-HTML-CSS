@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --primary-color: #4daf54;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popines", sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    background: #272d40;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.card__heart, .card__cart{
+    font-size: 25px;
+}
+.card__img{
+    width: 90%;
+    transition: 0.3s linear all;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card__title , .card__price {
+    text-align: center;
+    font-size: 25px;
+    transition: 0.3s linear all;
+}
+.card__title{
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.card__hover{
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.card__hover-size{
+    display: flex;
+    align-items: center;
+}
+.card__hover-size h4, .card__hover-color h4{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.card__hover-size span{
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: #dadada;
+    color: #272d40;
+    margin: 0 4px;
+    cursor: context-menu;
+}
+.card__hover-color{
+    margin-top: 12px;
+    display: flex;
+}
+.card__hover-color span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.card__hover-green{
+    background-color: var(--primary-color);
+}
+.card__hover-red{
+    background-color:  rgb(222, 57, 57);
+}
+.card__hover-black{
+    background-color: rgb(32, 32, 32)
+}
+.card__hover-action{
+    margin-top: 12px;
+}
+.card__hover-action button{
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s linear all;
+}
+
+
+.card__hover-action button:hover{
+    transform: scale(0.9);
+}
+
+.card:hover .card__img{
+    transform: translateY(-90px) rotate(-20deg);
+}
+.card:hover .card__title{
+    transform: translate(-40px, -90px) ;
+}
+.card:hover .card__price{
+    transform: translate(-118px, -90px) ;
+}
+.card:hover .card__hover{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-25%);
+}
