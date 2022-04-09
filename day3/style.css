@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+    --pink-color: #e26e70;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "popines", sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100%);
+    overflow: hidden;
+    position: relative;
+}
+.btn-open{
+    background-color: #fff;
+    padding: 20px 30px;
+    color: rgb(19, 17, 17);
+    border-radius: 4px;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s linear all;
+}
+.btn-open:hover{
+    opacity: 0.8;
+}
+
+
+/* Modal */
+.modal-cha{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal{
+    width: 480px;
+    height: 240px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    animation: modalShow 0.2s linear;
+}
+.modal__head{
+    padding: 16px;
+    background-color: var(--pink-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.modal__head span{
+    font-size: 28px;
+    cursor: pointer;
+}
+.modal__body{
+    padding: 16px;
+}
+.modal__body h3{
+    font-size: 26px;
+    color: var(--pink-color);
+}
+.modal__body p{
+    margin-top: 12px;
+}
+.modal__body button{
+    position: absolute;
+    background-color: var(--pink-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    right: 12px;
+    bottom: 12px;
+}
+.hide{
+    display: none;
+}
+@keyframes modalShow{
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}

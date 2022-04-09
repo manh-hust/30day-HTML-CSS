@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --pink-color: #f2726a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popines", sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 12px;
+    margin: 0 30px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.card__img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(28px);
+    border: 4px solid var(--pink-color);
+    cursor: pointer;
+    transition: 0.2s linear all;
+}
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: none;
+    transform: unset;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h1{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.card h3{
+    margin-top: 12px;
+    font-size: 16px;
+    color: var(--pink-color);
+}
+.card__icons{
+    margin-top: 28px;
+    color: white;
+    font-size: 24px;
+}
+.card__icons i {
+    margin: 0 12px;
+    cursor: pointer;
+}
+.card__icons i:hover{
+    color: var(--pink-color);
+}
+.card button{
+    margin-top: 28px;
+    padding: 12px 20px;
+    border: 1px solid var(--pink-color);
+    border-radius: 8px;
+    background-color: #242628;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s all linear;
+}
+.card button:hover{
+    background-color: var(--pink-color);
+    transform: scale(1.15);
+}
