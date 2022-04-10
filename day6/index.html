@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Press any key</h1>
+    </div>
+    <div class="content hide">
+        <div class="number">
+            <h1></h1>
+        </div>
+        <div class="list">
+            <div class="item">
+                <div class="item-head">Key</div>
+                <div class="item-content item-content-key"></div>
+            </div>
+            <div class="item">
+                <div class="item-head">Location</div>
+                <div class="item-content item-content-location"></div>
+            </div>
+            <div class="item">
+                <div class="item-head">Which</div>
+                <div class="item-content item-content-which"></div>
+            </div>
+            <div class="item">
+                <div class="item-head">Code</div>
+                <div class="item-content item-content-code"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const number = document.querySelector('.number h1')
+        const keyV = document.querySelector('.item-content-key')
+        const locationV = document.querySelector('.item-content-location')
+        const whichV = document.querySelector('.item-content-which')
+        const codeV = document.querySelector('.item-content-code')
+
+        const intro = document.querySelector('.intro')
+        const content = document.querySelector('.content')
+
+        addEventListener("keydown", function (e) {
+
+            content.classList.remove('hide')
+            intro.classList.add('hide')
+
+            const {code, key, location, which} = e
+
+            number.innerText = which;
+            keyV.innerText = key;
+            locationV.innerText = location;
+            whichV.innerText = which;
+            codeV.innerText = code;
+        });
+
+    </script>
+</body>
+</html>
