@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Search Tags
+        </h1>
+        <div class="body">
+            <div class="list-tags">
+                <div class="tag">nodejs <i class='bx bx-x'></i></div>
+                <div class="tag">reactjs <i class='bx bx-x'></i></div>
+                <div class="tag">vues <i class='bx bx-x'></i></div>
+            </div>
+            <input type="text" placeholder="Type and enter">
+        </div>    
+        <button class="tag tag-btn">Remove All</button>    
+    </div>
+    <script>
+        const closes = document.querySelectorAll('.tag i')
+        const btnReomove = document.querySelector('.tag-btn')
+        const listTag = document.querySelector('.list-tags')
+
+        btnReomove.addEventListener('click', function() {
+            listTag.classList.add('hide')
+        })
+        
+        for(var i = 0 ; i < closes.length; i++) {
+            closes[i].addEventListener('click', function(e){
+                e.target.parentNode.classList.add('hide')
+            })
+        }
+
+    </script>
+</body>
+</html>
