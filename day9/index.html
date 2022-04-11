@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="search">
+                <input id="search-input" type="text" placeholder="Search...">
+            </div>
+            <div class="city">
+                <h1 id="city">Hanoi, VN</h1>
+                <h5 id="time">20:32:08, 11/4/2022</h5>
+            </div>
+            <div class="temperature">
+                <span id="temperature">24</span>
+                <span class="icon-temp">o</span> C
+            </div>
+            <h1 class="short-desc"></h1>
+            <div class="more-desc">
+                <div class="view">
+                    <i class='far fa-eye'></i>
+                    <span id="view"></span>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="wind"></span>
+                </div>
+                <div class="cloud">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span id="cloud"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
