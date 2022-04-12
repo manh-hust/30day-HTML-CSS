@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --primary-color: #4daf54;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popines", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: none;
+}
+li{
+    padding-left: 0;
+    list-style: none;
+}
+.container{
+    width: 400px;
+    max-height: 80%;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.title{
+    display: flex;
+    padding: 12px 20px;
+    border-bottom: 1px solid #aaa;
+}
+.title input{
+    flex: 1;
+    font-size: 22px;
+}
+.title button{
+    background-color: #4daf54;
+    font-size: 20px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    color: #fff;
+}
+.list-todos{
+
+}
+.item-todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.item-todo span{
+    font-size: 20px;
+}
+.item-todo i{
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.item-todo:hover.item-todo i{
+    visibility: unset;
+}
+.text-gach{
+    text-decoration: line-through;
+    color: #aaa;
+}
