@@ -44,7 +44,6 @@ for (let i = 0; i < items.length; i++) {
             items[i].firstElementChild.classList.toggle('text-gach')
         } else {
             let value = items[i].firstElementChild.innerText
-
         }
     })
 }

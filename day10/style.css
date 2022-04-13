@@ -10,9 +10,10 @@
 body{
     font-family: "popines", sans-serif;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
     background-image: linear-gradient(to right, #4daf54, #3d8880);
 }
 button{
@@ -28,16 +29,25 @@ li{
     list-style: none;
 }
 .container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) ;
+    top: 80px;
     width: 400px;
     max-height: 80%;
     background-color: #fff;
     border-radius: 6px;
-    overflow: hidden;
+    overflow: auto;
 }
 .title{
     display: flex;
     padding: 12px 20px;
     border-bottom: 1px solid #aaa;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff
 }
 .title input{
     flex: 1;
