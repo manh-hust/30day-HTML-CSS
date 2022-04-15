@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --success-color: green;
+    --warning-color: rgb(255, 187, 0);
+    --error-color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popines", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a66b4;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 30px;
+    padding: 20px 40px;
+    background: #6b38b6;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.item h3{
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.item h1{
+    font-size: 56px;
+}

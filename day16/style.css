@@ -98,6 +98,24 @@ li{
     transform: translateX(150%);
     transition: 0.5s linear;
 }
+.top-to-bot{
+    transform: translateY(-150%);
+    transition: 0.5s linear;
+    opacity: 0;
+}
+.top-to-bot.start{
+    opacity: 1;
+    transform: translateY(0);
+}
+.bot-to-top{
+    transform: translateY(150%);
+    transition: 0.5s linear;
+    opacity: 0;
+}
+.bot-to-top.start{
+    opacity: 1;
+    transform: translateY(0);
+}
 .left-to-right.start{
     transform: translateX(0);
 }
