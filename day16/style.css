@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --primary-color: #4daf54;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popines", sans-serif;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: none;
+}
+li{
+    padding-left: 0;
+    list-style: none;
+}
+.container-1, .container-2, .container-3{
+    width: 100%;
+    height: 100%;
+}
+/*  Container - 1 */
+.container-1{
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+.container-1 .content{
+    width: 50%;
+}
+.container-1 h1{
+    font-size: 50px;
+    margin-bottom: 24px;
+}
+.container-1 p{
+    font-size: 20px;
+}
+/*  Container - 2 */
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-2 .item{
+    width: 36%;
+    background-color: #242628;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    margin: 0 20px;
+}
+.container-2 h1{
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.container-2 p{
+    line-height: 20px;
+}
+/*  Container - 3 */
+.container-3{
+    background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-3 .item{
+    max-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #2e363a;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+}
+.container-3 h1{
+    color: #017c2c;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.left-to-right{
+    transform: translateX(-150%);
+    transition: 0.5s linear;
+}
+.right-to-left{
+    transform: translateX(150%);
+    transition: 0.5s linear;
+}
+.left-to-right.start{
+    transform: translateX(0);
+}
+.right-to-left.start{
+    transform: translateX(0);
+}
+.zoom{
+    transform: scale(0);
+    transition: 0.5s linear;
+}
+.zoom.start{
+    transform: scale(1);
+}

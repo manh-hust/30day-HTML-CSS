@@ -77,9 +77,9 @@ li{
     background-color: #eee;
 }
 .product img{
-    height: 60px;
-    width:  80px;
-    object-fit: cover;
+    height: 80%;
+    width:  20%;
+    /* object-fit: cover; */
 }
 .product-content{
     margin: 4px;

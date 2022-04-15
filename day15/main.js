@@ -12,7 +12,7 @@ fetch(url)
             input.addEventListener('input', function (e) {
                 var value = e.target.value
                 var listFilter = data.filter(item => {
-                    return item.title.toUpperCase().includes(value.toUpperCase(), 0)
+                    return item.title.toUpperCase().includes(value.toUpperCase(), 0) || item.price.toString().includes(value.toUpperCase(), 0)
                 })
                 setHtml(listFilter)
             })
