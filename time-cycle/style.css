@@ -1,0 +1,70 @@
+body{
+    background-color: #2f363e;
+    display: flex;
+}
+#time{
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle div{
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px, 5px);
+}
+#time .circle svg circle:nth-child(2){
+    stroke: #ff2972;
+    stroke-dasharray: 440;
+}
+.dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+
+}
+.dots::before
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff2972;
+    top: -3px;
+    box-shadow: 0 0 20px #ff2972, 0 0 60px #ff2972; 
+}
+    /* C%SS SVG */
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+.svg-box{
+    background-color: #fff;
+}
