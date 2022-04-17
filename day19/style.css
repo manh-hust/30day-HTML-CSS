@@ -1,5 +1,6 @@
 body{
     display: block;
+    overflow: hidden;
 }
 button{
     margin: 12px 4px;
@@ -12,6 +13,14 @@ button{
 input{
     height: 48px;
     cursor: pointer;
+}
+a{
+    text-align: center;
+    padding: 14px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
 }
 .tool{
     display: flex;
